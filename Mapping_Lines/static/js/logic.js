@@ -7,6 +7,11 @@ console.log("working");
 let map = L.map('mapid').setView([37.6213, -122.3790], 5);
 
 
+
+
+
+
+
 //13.4.3
 // Coordinates for each point to be used in the line.
 let line = [

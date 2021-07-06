@@ -1,3 +1,7 @@
+#things I'd like to ignore
+/static/js/config.js
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

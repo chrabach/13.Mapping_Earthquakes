@@ -45,14 +45,7 @@ let myStyle = {
 d3.json(torontoData).then(function(data) {
     console.log(data);
   // Creating a GeoJSON layer with the retrieved data.
-  L.geoJson(data),{
-	  
-	  
-	  
-	  
-	  
-	  
-  }
+  L.geoJson(data)
 	  
 	  
 	  

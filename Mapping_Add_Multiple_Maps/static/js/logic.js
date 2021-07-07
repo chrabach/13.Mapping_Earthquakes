@@ -36,7 +36,7 @@ let map = L.map('mapid', {
 L.control.layers(baseMaps).addTo(map);
 
 //13.5.4
-let airportData = "https://raw.githubusercontent.com/chrabach/13.Mapping_Earthquakes/Map_Multiple_GeoJSON_Points/majorAirports.json"
+let airportData = "https://raw.githubusercontent.com/chrabach/13.Mapping_Earthquakes/main/majorAirports.json"
 //Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
     console.log(data);

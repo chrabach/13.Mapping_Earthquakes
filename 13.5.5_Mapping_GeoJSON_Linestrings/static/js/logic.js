@@ -7,7 +7,7 @@
 //let map = L.map('mapid').setView([37.6213, -122.3790], 5);
 //13.5.2
 // Create the map object with center at the San Francisco airport.
-let map = L.map('mapid').setView([44.0, -80.0], 2);
+//let map = L.map('mapid').setView([44.0, -80.0], 2);
 //13.5.3
 // Create the map object with center and zoom level.
 //let map = L.map('mapid').setView([30, 30], 2);

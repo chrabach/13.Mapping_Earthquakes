@@ -31,7 +31,6 @@ let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/t
 let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-
     accessToken: API_KEY
 });
 
@@ -44,9 +43,9 @@ let baseMaps = {
 
 //Create the map object with center, zoom level and default layer.
 let map = new L.Map('mapid', {
-	center: [43.7,-79.3],
-	zoom:11,
-	layers:[satelliteStreets]
+	center: [3.9,-98.5],
+	zoom:3,
+	layers:[streets]
 });
 
 //13.5.5
@@ -77,11 +76,13 @@ L.control.layers(baseMaps).addTo(map);
 
 //13.5.6
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/chrabach/13.Mapping_Earthquakes/main/torontoNeighborhoods.json";
+//let torontoHoods = "https://raw.githubusercontent.com/chrabach/13.Mapping_Earthquakes/main/torontoNeighborhoods.json";
 
 
+//13.6.1
+let earthquake = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
 
-d3.json(torontoHoods).then(function(data){
+d3.json(earthquake).then(function(data){
     console.log(data);
     L.geoJson(data).addTo(map);
 });

@@ -1,7 +1,8 @@
 #things I'd like to ignore
 /static/js/config.js
 config.js
-
+Earthquake_Challenge/major_eq_starter_logic.js
+Earthquake_Challenge/tectonic_plate_starter_logic.js
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
